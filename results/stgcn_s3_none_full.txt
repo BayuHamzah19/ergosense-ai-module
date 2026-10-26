@@ -1,0 +1,20 @@
+nohup: ignoring input
+Perangkat: cpu | data (4631, 4, 75, 20) | node: all | subjek ['25', '26', '27', '28', '29', '30', '31', '33', '34', '35', '36']
+Parameter: 92,930 (~0.37 MB float32)
+
+Fold uji=25 | latih=['27', '28', '29', '30', '31', '33', '34', '35', '36'] | validasi=26
+    epoch  1 loss 0.4714 | val F1 0.202 AUC 0.137 | 38.7 dtk
+    epoch  2 loss 0.3149 | val F1 0.621 AUC 0.677 | 42.6 dtk
+    epoch  3 loss 0.2083 | val F1 0.656 AUC 0.287 | 42.2 dtk
+    epoch  4 loss 0.1788 | val F1 0.481 AUC 0.089 | 75.4 dtk
+    epoch  5 loss 0.1521 | val F1 0.380 AUC 0.131 | 73.0 dtk
+    epoch  6 loss 0.1277 | val F1 0.113 AUC 0.016 | 42.2 dtk
+    epoch  7 loss 0.1080 | val F1 0.406 AUC 0.195 | 57.4 dtk
+    epoch  8 loss 0.0960 | val F1 0.683 AUC 0.382 | 40.1 dtk
+    epoch  9 loss 0.1064 | val F1 0.277 AUC 0.049 | 42.1 dtk
+    epoch 10 loss 0.1299 | val F1 0.026 AUC 0.015 | 40.7 dtk
+    early stopping
+  -> {'test_subject': '25', 'val_subject': '26', 'AUC': 0.006, 'bal_acc': 0.44, 'recall_drowsy': np.float64(0.0), 'precision_drowsy': 0.0, 'F1_drowsy': 0.0}
+
+Fold uji=26 | latih=['25', '28', '29', '30', '31', '33', '34', '35', '36'] | validasi=27
+    epoch  1 loss 0.4802 | val F1 0.019 AUC 0.252 | 47.5 dtk

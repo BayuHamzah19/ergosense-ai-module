@@ -1,0 +1,13 @@
+Perangkat: cpu | data (6333, 4, 75, 20) | subjek ['31', '33', '34', '35', '36']
+Parameter: 92,930 (~0.37 MB float32)
+
+Fold uji=31 | latih=['34', '35', '36'] | validasi=33
+    epoch  1 loss 0.2926 | val F1 0.628 AUC 0.419 | 343.2 dtk
+    epoch  2 loss 0.1475 | val F1 0.641 AUC 0.585 | 224.8 dtk
+    epoch  3 loss 0.0955 | val F1 0.582 AUC 0.634 | 222.1 dtk
+    epoch  4 loss 0.0578 | val F1 0.562 AUC 0.791 | 221.5 dtk
+    epoch  5 loss 0.0439 | val F1 0.542 AUC 0.778 | 269.0 dtk
+    epoch  6 loss 0.0450 | val F1 0.673 AUC 0.757 | 217.8 dtk
+    epoch  7 loss 0.0444 | val F1 0.690 AUC 0.720 | 216.6 dtk
+    epoch  8 loss 0.0327 | val F1 0.616 AUC 0.810 | 196.7 dtk
+    epoch  9 loss 0.0234 | val F1 0.741 AUC 0.805 | 189.0 dtk

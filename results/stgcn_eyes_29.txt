@@ -1,0 +1,42 @@
+Perangkat: cpu | data (4411, 4, 75, 12) | node: eyes | subjek ['25', '26', '27', '28', '29', '30', '31', '33', '34', '35', '36']
+Parameter: 92,866 (~0.37 MB float32)
+
+Fold uji=29 | latih=['25', '26', '27', '28', '31', '33', '34', '35', '36'] | validasi=30
+    epoch  1 loss 0.5533 | val F1 0.000 AUC 0.376 | 21.9 dtk
+    epoch  2 loss 0.4154 | val F1 0.629 AUC 0.647 | 21.6 dtk
+    epoch  3 loss 0.3083 | val F1 0.599 AUC 0.673 | 21.2 dtk
+    epoch  4 loss 0.2764 | val F1 0.107 AUC 0.733 | 21.6 dtk
+    epoch  5 loss 0.2209 | val F1 0.694 AUC 0.788 | 21.4 dtk
+    epoch  6 loss 0.1881 | val F1 0.713 AUC 0.805 | 21.7 dtk
+    epoch  7 loss 0.1865 | val F1 0.654 AUC 0.734 | 21.2 dtk
+    epoch  8 loss 0.1781 | val F1 0.438 AUC 0.723 | 21.4 dtk
+    epoch  9 loss 0.1628 | val F1 0.537 AUC 0.754 | 21.5 dtk
+    epoch 10 loss 0.1512 | val F1 0.691 AUC 0.824 | 21.5 dtk
+    epoch 11 loss 0.1442 | val F1 0.718 AUC 0.850 | 21.8 dtk
+    epoch 12 loss 0.1259 | val F1 0.690 AUC 0.830 | 21.6 dtk
+    epoch 13 loss 0.1233 | val F1 0.671 AUC 0.887 | 21.7 dtk
+    epoch 14 loss 0.1134 | val F1 0.595 AUC 0.638 | 26.1 dtk
+    epoch 15 loss 0.1302 | val F1 0.789 AUC 0.912 | 25.0 dtk
+    epoch 16 loss 0.1001 | val F1 0.704 AUC 0.818 | 24.9 dtk
+    epoch 17 loss 0.0835 | val F1 0.717 AUC 0.851 | 22.6 dtk
+    epoch 18 loss 0.1011 | val F1 0.798 AUC 0.905 | 25.5 dtk
+    epoch 19 loss 0.0856 | val F1 0.745 AUC 0.848 | 26.9 dtk
+    epoch 20 loss 0.0950 | val F1 0.712 AUC 0.809 | 24.7 dtk
+    epoch 21 loss 0.0923 | val F1 0.694 AUC 0.822 | 24.2 dtk
+    epoch 22 loss 0.1030 | val F1 0.682 AUC 0.906 | 25.1 dtk
+    epoch 23 loss 0.0740 | val F1 0.679 AUC 0.799 | 24.0 dtk
+    early stopping
+  -> {'test_subject': '29', 'val_subject': '30', 'AUC': 0.842, 'bal_acc': 0.642, 'recall_drowsy': np.float64(0.951), 'precision_drowsy': 0.59, 'F1_drowsy': 0.728}
+
+Hasil ST-GCN LOSO:
+test_subject val_subject   AUC  bal_acc  recall_drowsy  precision_drowsy  F1_drowsy
+          29          30 0.842    0.642          0.951              0.59      0.728
+
+Rata-rata (bobot sama per subjek):
+ AUC                 0.842
+bal_acc             0.642
+recall_drowsy       0.951
+precision_drowsy    0.590
+F1_drowsy           0.728
+
+Disimpan: /home/bayu/Kuliah/ERGO-SENSE/results/stgcn_loso_eyes_29.csv

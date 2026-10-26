@@ -1,0 +1,2 @@
+test_subject,val_subject,AUC,bal_acc,recall_drowsy,precision_drowsy,F1_drowsy
+31,33,0.396,0.478,0.946,0.474,0.632

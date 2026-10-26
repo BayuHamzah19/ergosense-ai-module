@@ -1,0 +1,46 @@
+PROTOKOL UJI MURNI (Fold2, subjek 13-24)
+Tujuan: menguji aturan EAR v0.1 pada subjek yang tidak dipakai merancangnya.
+
+1. Aturan dibekukan: src/ergo_rule_config.json dan src/ergo_rule.py (checksum di bawah). Tidak diubah setelah melihat hasil Fold2.
+   Jika ada perubahan, hasil Fold2 dilaporkan sebagai data pengembangan, bukan uji murni.
+2. Kriteria pengeluaran (hanya ini): wajah hilang lebih dari 20% per video; FPS asli di bawah 14,5; video 0 atau 10 tidak ada.
+3. Dilaporkan untuk SEMUA subjek yang lolos kriteria: AUC p50_30 per subjek dan rata-ratanya; jumlah subjek dengan AUC >= 0,8;
+   persen detik kuning-atau-lebih dan merah pada rekaman alert dan drowsy; jumlah peringatan.
+   Sensitivitas Sedang sebagai hasil utama; Tinggi dan Rendah sebagai tambahan.
+4. Analisis sensitivitas: subjek dengan resolusi dan FPS sama pada video alert dan drowsy (selisih FPS kurang dari 1)
+   vs subjek dengan setelan berbeda. Dikelompokkan dari metadata, bukan dari hasil.
+5. Landmark Fold2 disimpan di landmarks_holdout/, terpisah dari data pengembangan (subjek 25-36).
+Sel 13 Okt 2026 05:00:32  WIB
+f62a209a79588628d2a92b4e9681b4ed086cd1a3bc9573d82c4ddc0b5f28073c  src/ergo_rule_config.json
+323d8cb3a71a0646445b1e5ba27c43b11ebd5713d4f8e283e88887823836215e  src/ergo_rule.py
+
+CATATAN PENERAPAN KRITERIA (dari metadata, sebelum evaluasi)
+- Subjek 18 dikeluarkan: video drowsy 12,0 FPS (< 14,5).
+- Wajah hilang maksimum 5,0% (subjek 23, alert): tidak ada
+  pengeluaran karena kriteria wajah.
+- Subjek 24 masuk (14,92 FPS).
+- Setelan sama: 13, 15, 16, 19, 21, 22, 23, 24.
+- Setelan berbeda: 14, 17, 20.
+
+HASIL UJI MURNI v0.1 (dicatat Sel 13 Okt 2026 06:48:15  WIB)
+subjek     AUC    ref |  ALERT: kuning+   merah peringatan |  DROWSY: kuning+   merah peringatan  peringatan pertama (dtk) |  uncertain a/d
+13       0.998    nan |            0.0%    0.0%          0 |            82.7%   38.5%          2                       214 |    10%/10%
+14       0.795    nan |            0.0%    0.0%          0 |            32.1%    5.2%          1                       607 |    10%/10%
+15       0.346    nan |          100.0%   77.4%          2 |            87.1%   51.4%          2                        79 |     9%/10%
+16       0.951    nan |            0.0%    0.0%          0 |            30.9%   10.9%          2                       166 |    13%/10%
+17       1.000    nan |            0.0%    0.0%          0 |            70.8%   18.4%          1                       254 |    10%/10%
+19       0.101    nan |           88.9%    0.0%          0 |            22.1%    0.0%          0                       nan |    10%/10%
+20       0.971    nan |           18.4%    0.5%          0 |            94.7%   78.9%          2                       177 |     9%/8%
+21       0.999    nan |            7.5%    0.0%          0 |           100.0%   42.4%          2                        82 |    10%/10%
+22       0.980    nan |            4.9%    0.0%          0 |            90.4%   33.4%          2                       183 |    10%/10%
+23       0.896    nan |            0.0%    0.0%          0 |            29.5%    2.0%          0                       nan |    24%/10%
+24       0.583    nan |          100.0%   93.4%          2 |           100.0%   99.7%          1                        70 |     8%/8%
+
+Rata-rata atas 11 subjek (bobot sama):
+  AUC p50_30                     : 0.784   (referensi baseline_loso self30: 0.787)
+  Subjek dengan AUC >= 0.8       : 7 dari 11   (referensi: 8 dari 11)
+  Rekaman ALERT  - kuning atau lebih (alarm palsu): 29.1%   merah: 15.6%
+  Rekaman DROWSY - kuning atau lebih (terdeteksi) : 67.3%   merah: 34.6%
+
+Catatan: ambang kuning (IKM 33) punya dasar data, tetapi batas merah (IKM 66) dan pembagi skor 0,15 masih tebakan sementara.
+Jika alarm palsu pada rekaman ALERT tinggi, itu bahan untuk menyesuaikan ambang (lewat uji coba relawan, bukan lewat menyetel ke data ini).

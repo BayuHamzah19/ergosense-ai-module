@@ -1,0 +1,7 @@
+nohup: ignoring input
+Perangkat: cpu | data (4521, 4, 75, 20) | node: all | subjek ['25', '26', '27', '28', '29', '30', '31', '33', '34', '35', '36']
+Parameter: 92,930 (~0.37 MB float32)
+
+Fold uji=25 | latih=['27', '28', '29', '30', '31', '33', '34', '35', '36'] | validasi=26
+    epoch  1 loss 0.4012 | val F1 1.000 AUC 1.000 | 86.4 dtk
+    epoch  2 loss 0.2881 | val F1 0.000 AUC 0.830 | 129.8 dtk

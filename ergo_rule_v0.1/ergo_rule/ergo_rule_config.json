@@ -1,0 +1,21 @@
+{
+  "version": "0.1",
+  "calibration_s": 30,
+  "calibration_min_valid_frac": 0.7,
+  "baseline_percentile": 90,
+  "closed_ratio": 0.5,
+  "window_s": 30,
+  "warmup_s": 30,
+  "min_valid_frac": 0.8,
+  "dt_cap_s": 0.25,
+  "no_face_uncertain_s": 10,
+  "tick_s": 1.0,
+  "ikm_divisor": 0.15,
+  "sensitivity": { "high": 0.7, "medium": 1.0, "low": 1.4 },
+  "default_sensitivity": "medium",
+  "ikm_yellow": 33,
+  "ikm_red": 66,
+  "alert": { "red_hold_s": 10, "rearm_ikm": 50, "cooldown_s": 300 },
+  "provisional": ["ikm_red", "ikm_divisor", "alert.red_hold_s", "alert.rearm_ikm", "alert.cooldown_s"],
+  "note": "Parameter di daftar provisional adalah tebakan desain tanpa dasar data. Sisanya berasal dari evaluasi 11 subjek UTA-RLDD."
+}

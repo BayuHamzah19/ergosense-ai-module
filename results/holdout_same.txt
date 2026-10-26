@@ -1,0 +1,18 @@
+subjek     AUC    ref |  ALERT: kuning+   merah peringatan |  DROWSY: kuning+   merah peringatan  peringatan pertama (dtk) |  uncertain a/d
+13       0.998    nan |            0.0%    0.0%          0 |            82.7%   38.5%          2                       214 |    10%/10%
+15       0.346    nan |          100.0%   77.4%          2 |            87.1%   51.4%          2                        79 |     9%/10%
+16       0.951    nan |            0.0%    0.0%          0 |            30.9%   10.9%          2                       166 |    13%/10%
+19       0.101    nan |           88.9%    0.0%          0 |            22.1%    0.0%          0                       nan |    10%/10%
+21       0.999    nan |            7.5%    0.0%          0 |           100.0%   42.4%          2                        82 |    10%/10%
+22       0.980    nan |            4.9%    0.0%          0 |            90.4%   33.4%          2                       183 |    10%/10%
+23       0.896    nan |            0.0%    0.0%          0 |            29.5%    2.0%          0                       nan |    24%/10%
+24       0.583    nan |          100.0%   93.4%          2 |           100.0%   99.7%          1                        70 |     8%/8%
+
+Rata-rata atas 8 subjek (bobot sama):
+  AUC p50_30                     : 0.732   (referensi baseline_loso self30: 0.787)
+  Subjek dengan AUC >= 0.8       : 5 dari 8   (referensi: 8 dari 11)
+  Rekaman ALERT  - kuning atau lebih (alarm palsu): 37.7%   merah: 21.3%
+  Rekaman DROWSY - kuning atau lebih (terdeteksi) : 67.8%   merah: 34.8%
+
+Catatan: ambang kuning (IKM 33) punya dasar data, tetapi batas merah (IKM 66) dan pembagi skor 0,15 masih tebakan sementara.
+Jika alarm palsu pada rekaman ALERT tinggi, itu bahan untuk menyesuaikan ambang (lewat uji coba relawan, bukan lewat menyetel ke data ini).

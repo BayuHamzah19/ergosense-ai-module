@@ -1,0 +1,9 @@
+nohup: ignoring input
+Perangkat: cpu | data (4411, 4, 75, 12) | node: eyes | subjek ['25', '26', '27', '28', '29', '30', '31', '33', '34', '35', '36']
+Parameter: 92,866 (~0.37 MB float32)
+
+Fold uji=25 | latih=['27', '28', '29', '30', '31', '33', '34', '35', '36'] | validasi=26
+    epoch  1 loss 0.5390 | val F1 0.397 AUC 0.833 | 20.5 dtk
+    epoch  2 loss 0.3249 | val F1 0.000 AUC 0.076 | 23.9 dtk
+    epoch  3 loss 0.2618 | val F1 0.000 AUC 0.059 | 22.8 dtk
+    epoch  4 loss 0.2121 | val F1 0.095 AUC 0.173 | 23.8 dtk

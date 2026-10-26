@@ -1,0 +1,21 @@
+subjek     AUC    ref |  ALERT: kuning+   merah peringatan |  DROWSY: kuning+   merah peringatan  peringatan pertama (dtk) |  uncertain a/d
+13       0.998    nan |            0.0%    0.0%          0 |            57.6%   24.8%          1                       363 |    10%/10%
+14       0.795    nan |            0.0%    0.0%          0 |            21.5%    0.0%          0                       nan |    10%/10%
+15       0.346    nan |           99.7%   18.0%          2 |            72.7%   15.6%          2                       277 |     9%/10%
+16       0.951    nan |            0.0%    0.0%          0 |            15.7%    1.8%          0                       nan |    13%/10%
+17       1.000    nan |            0.0%    0.0%          0 |            48.5%   10.9%          1                       255 |    10%/10%
+19       0.101    nan |            0.4%    0.0%          0 |             0.0%    0.0%          0                       nan |    10%/10%
+20       0.971    nan |            9.8%    0.0%          0 |            89.4%   71.3%          2                       195 |     9%/8%
+21       0.999    nan |            0.0%    0.0%          0 |            86.3%   13.1%          2                       153 |    10%/10%
+22       0.980    nan |            0.0%    0.0%          0 |            65.0%    8.9%          1                       460 |    10%/10%
+23       0.896    nan |            0.0%    0.0%          0 |             9.2%    0.0%          0                       nan |    24%/10%
+24       0.583    nan |           99.4%   66.6%          2 |           100.0%   80.0%          3                        98 |     8%/8%
+
+Rata-rata atas 11 subjek (bobot sama):
+  AUC p50_30                     : 0.784   (referensi baseline_loso self30: 0.787)
+  Subjek dengan AUC >= 0.8       : 7 dari 11   (referensi: 8 dari 11)
+  Rekaman ALERT  - kuning atau lebih (alarm palsu): 19.0%   merah: 7.7%
+  Rekaman DROWSY - kuning atau lebih (terdeteksi) : 51.4%   merah: 20.6%
+
+Catatan: ambang kuning (IKM 33) punya dasar data, tetapi batas merah (IKM 66) dan pembagi skor 0,15 masih tebakan sementara.
+Jika alarm palsu pada rekaman ALERT tinggi, itu bahan untuk menyesuaikan ambang (lewat uji coba relawan, bukan lewat menyetel ke data ini).

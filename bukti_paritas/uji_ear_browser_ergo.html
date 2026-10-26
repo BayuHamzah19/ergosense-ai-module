@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<title>Uji EAR Browser</title>
+<style>
+  body { font-family: system-ui, sans-serif; max-width: 760px; margin: 24px auto; padding: 0 16px; }
+  video { max-width: 100%; background: #000; }
+  button { padding: 8px 14px; margin-right: 8px; }
+  #log { white-space: pre-wrap; background: #f3f3f3; padding: 10px; margin-top: 12px; }
+</style>
+</head>
+<body>
+<h2>Uji EAR di browser (kode ergo_rule.js)</h2>
+<p>1. Pilih klip H.264 &nbsp; 2. Klik Mulai &nbsp; 3. Tunggu selesai, lalu Unduh CSV.</p>
+<input type="file" id="file" accept="video/mp4">
+<p>
+  <button id="start" disabled>Mulai</button>
+  <button id="dl" disabled>Unduh ear_browser.csv</button>
+</p>
+<video id="v" muted playsinline controls></video>
+<div id="log">Memuat MediaPipe...</div>
+
+<script src="ergo_rule.js"></script>
+<script type="module">
+import { FaceLandmarker, FilesetResolver }
+  from "https://cdn.jsdelivr.net/npm/@mediapipe/tasks-vision@0.10.14/vision_bundle.mjs";
+
+// ====== BAGIAN YANG HARUS SAMA DENGAN ear_python.py ======
+// Indeks titik mata (urutan p1..p6) dan rumus EAR. Cocokkan dengan ear_python.py.
+const RIGHT = [33, 160, 158, 133, 153, 144];
+const LEFT  = [362, 385, 387, 263, 373, 380];
+
+function eyeEar(lm, idx, w, h) {
+  const p = idx.map(i => [lm[i].x * w, lm[i].y * h]); // konversi ke piksel
+  const d = (a, b) => Math.hypot(a[0] - b[0], a[1] - b[1]);
+  return (d(p[1], p[5]) + d(p[2], p[4])) / (2 * d(p[0], p[3]));
+}
+
+// Memanggil fungsi aplikasi yang sebenarnya (ergo_rule.js). Mengembalikan null bila tak ada wajah.
+function calcEar(lm, w, h) {
+  if (!(window.ErgoRule && window.ErgoRule.earFromMediapipe)) {
+    throw new Error("ErgoRule.earFromMediapipe tidak ditemukan. Pastikan ergo_rule.js ada di folder ini.");
+  }
+  return window.ErgoRule.earFromMediapipe(lm, w, h);
+}
+// =========================================================
+
+const $ = id => document.getElementById(id);
+const v = $("v"), log = $("log");
+let landmarker, rows = [], lastTs = -1;
+
+async function init() {
+  const fileset = await FilesetResolver.forVisionTasks(
+    "https://cdn.jsdelivr.net/npm/@mediapipe/tasks-vision@0.10.14/wasm");
+  landmarker = await FaceLandmarker.createFromOptions(fileset, {
+    baseOptions: { modelAssetPath: "face_landmarker.task", delegate: "CPU" },
+    runningMode: "VIDEO",
+    numFaces: 1
+  });
+  log.textContent = "Siap. Pilih klip.";
+  check();
+}
+function check() { $("start").disabled = !(landmarker && v.src); }
+
+$("file").onchange = e => {
+  const f = e.target.files[0];
+  if (!f) return;
+  v.src = URL.createObjectURL(f);
+  v.onerror = () => log.textContent =
+    "Video tidak bisa diputar. Konversi dulu ke H.264 dengan ffmpeg.";
+  v.onloadedmetadata = () => { log.textContent =
+    `Klip dimuat: ${v.videoWidth}x${v.videoHeight}, ${v.duration.toFixed(1)} dtk`; check(); };
+};
+
+$("start").onclick = () => {
+  rows = []; lastTs = -1;
+  v.currentTime = 0;
+  v.playbackRate = 0.5; // pelan supaya tidak ada frame terlewat
+  v.play();
+  const step = (now, meta) => {
+    const t = meta.mediaTime;
+    const ts = Math.round(t * 1000);
+    try {
+      if (ts > lastTs) {
+        lastTs = ts;
+        const res = landmarker.detectForVideo(v, ts);
+        let ear = "";
+        if (res.faceLandmarks && res.faceLandmarks.length) {
+          const e = calcEar(res.faceLandmarks[0], v.videoWidth, v.videoHeight);
+          ear = (e === null || e === undefined || Number.isNaN(e)) ? "" : e.toFixed(5);
+        }
+        rows.push(`${t.toFixed(4)},${ear}`);
+        if (rows.length % 50 === 0) log.textContent = `Memproses... ${rows.length} frame (t=${t.toFixed(1)} dtk)`;
+      }
+    } catch (err) {
+      v.pause();
+      log.textContent = "ERROR pada frame t=" + t.toFixed(3) + ": " + (err && err.message ? err.message : err);
+      console.error(err);
+      return;
+    }
+    if (!v.ended) v.requestVideoFrameCallback(step);
+  };
+  v.requestVideoFrameCallback(step);
+  log.textContent = "Memproses...";
+};
+
+v.onended = () => {
+  if (rows.length === 0) { log.textContent = "Selesai tetapi 0 frame terproses. Cek Console (F12)."; return; }
+  const noFace = rows.filter(r => r.endsWith(",")).length;
+  log.textContent = `Selesai: ${rows.length} baris, tanpa wajah ${(100 * noFace / rows.length).toFixed(1)}%`;
+  $("dl").disabled = false;
+};
+
+$("dl").onclick = () => {
+  const blob = new Blob(["t,ear\n" + rows.join("\n") + "\n"], { type: "text/csv" });
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(blob);
+  a.download = "ear_browser.csv";
+  a.click();
+};
+
+init().catch(e => log.textContent = "Gagal memuat: " + e);
+</script>
+</body>
+</html>

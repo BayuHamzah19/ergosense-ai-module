@@ -1,0 +1,152 @@
+nohup: ignoring input
+Video yang akan diproses: 49 (label ['0', '10'])
+[1/49] proses 13_0.npz ...
+WARNING: Logging before InitGoogle() is written to STDERR
+W0000 00:00:1791878239.568878  692263 face_landmarker_graph.cc:180] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+W0000 00:00:1791878239.625352  692268 inference_feedback_manager.cc:121] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1791878239.684238  692268 inference_feedback_manager.cc:121] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+    selesai 469 dtk | FPS asli 29.8 | frame hilang 0.3%
+[2/49] proses 13_10.npz ...
+W0000 00:00:1791878706.932671  697273 face_landmarker_graph.cc:180] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+W0000 00:00:1791878706.951745  697276 inference_feedback_manager.cc:121] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1791878706.985380  697277 inference_feedback_manager.cc:121] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+    selesai 504 dtk | FPS asli 29.8 | frame hilang 0.0%
+[3/49] proses 14_0.npz ...
+W0000 00:00:1791879211.026322  703769 face_landmarker_graph.cc:180] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+W0000 00:00:1791879211.049338  703772 inference_feedback_manager.cc:121] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1791879211.105610  703772 inference_feedback_manager.cc:121] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+    selesai 564 dtk | FPS asli 30.0 | frame hilang 0.0%
+[4/49] proses 14_10.npz ...
+W0000 00:00:1791879775.307835  710118 face_landmarker_graph.cc:180] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+W0000 00:00:1791879775.325181  710120 inference_feedback_manager.cc:121] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1791879775.372684  710122 inference_feedback_manager.cc:121] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+    selesai 353 dtk | FPS asli 30.0 | frame hilang 0.0%
+[5/49] proses 15_0.npz ...
+W0000 00:00:1791880128.561762  714916 face_landmarker_graph.cc:180] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+W0000 00:00:1791880128.566852  714918 inference_feedback_manager.cc:121] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1791880128.584461  714918 inference_feedback_manager.cc:121] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+    selesai 187 dtk | FPS asli 30.0 | frame hilang 0.0%
+[6/49] proses 15_10.npz ...
+W0000 00:00:1791880315.769446  716615 face_landmarker_graph.cc:180] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+W0000 00:00:1791880315.775541  716617 inference_feedback_manager.cc:121] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1791880315.789119  716619 inference_feedback_manager.cc:121] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+    selesai 177 dtk | FPS asli 30.0 | frame hilang 0.0%
+[7/49] proses 16_0.npz ...
+W0000 00:00:1791880492.338897  718206 face_landmarker_graph.cc:180] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+W0000 00:00:1791880492.344634  718209 inference_feedback_manager.cc:121] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1791880492.359990  718209 inference_feedback_manager.cc:121] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+    selesai 127 dtk | FPS asli 24.0 | frame hilang 0.0%
+[8/49] proses 16_10.npz ...
+W0000 00:00:1791880619.220251  719352 face_landmarker_graph.cc:180] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+W0000 00:00:1791880619.225660  719354 inference_feedback_manager.cc:121] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1791880619.238602  719356 inference_feedback_manager.cc:121] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+    selesai 163 dtk | FPS asli 24.0 | frame hilang 0.0%
+[9/49] proses 17_0.npz ...
+W0000 00:00:1791880781.868799  720878 face_landmarker_graph.cc:180] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+W0000 00:00:1791880781.873933  720880 inference_feedback_manager.cc:121] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1791880781.889136  720882 inference_feedback_manager.cc:121] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+    selesai 130 dtk | FPS asli 30.0 | frame hilang 0.0%
+[10/49] proses 17_10.npz ...
+W0000 00:00:1791880911.456379  722153 face_landmarker_graph.cc:180] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+W0000 00:00:1791880911.460996  722155 inference_feedback_manager.cc:121] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1791880911.475545  722155 inference_feedback_manager.cc:121] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+    selesai 118 dtk | FPS asli 29.9 | frame hilang 0.2%
+[11/49] proses 18_0.npz ...
+W0000 00:00:1791881029.159069  723284 face_landmarker_graph.cc:180] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+W0000 00:00:1791881029.164171  723286 inference_feedback_manager.cc:121] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1791881029.179158  723286 inference_feedback_manager.cc:121] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+    selesai 155 dtk | FPS asli 19.4 | frame hilang 0.0%
+[12/49] proses 18_10.npz ...
+W0000 00:00:1791881183.825025  724727 face_landmarker_graph.cc:180] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+W0000 00:00:1791881183.830394  724729 inference_feedback_manager.cc:121] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1791881183.842249  724729 inference_feedback_manager.cc:121] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+    selesai 126 dtk | FPS asli 12.0 | frame hilang 0.0%
+[13/49] proses 19_0.npz ...
+W0000 00:00:1791881309.783244  725896 face_landmarker_graph.cc:180] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+W0000 00:00:1791881309.788472  725898 inference_feedback_manager.cc:121] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1791881309.801333  725900 inference_feedback_manager.cc:121] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+    selesai 235 dtk | FPS asli 30.0 | frame hilang 0.0%
+[14/49] proses 19_10.npz ...
+W0000 00:00:1791881544.705644  727965 face_landmarker_graph.cc:180] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+W0000 00:00:1791881544.710675  727967 inference_feedback_manager.cc:121] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1791881544.732258  727967 inference_feedback_manager.cc:121] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+    selesai 242 dtk | FPS asli 30.0 | frame hilang 0.0%
+[15/49] proses 20_0.npz ...
+W0000 00:00:1791881787.190828  730097 face_landmarker_graph.cc:180] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+W0000 00:00:1791881787.196522  730099 inference_feedback_manager.cc:121] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1791881787.215213  730100 inference_feedback_manager.cc:121] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+    selesai 209 dtk | FPS asli 30.0 | frame hilang 0.7%
+[16/49] proses 20_10.npz ...
+W0000 00:00:1791881995.818376  731977 face_landmarker_graph.cc:180] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+W0000 00:00:1791881995.823544  731979 inference_feedback_manager.cc:121] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1791881995.839532  731979 inference_feedback_manager.cc:121] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+    selesai 149 dtk | FPS asli 30.0 | frame hilang 0.6%
+[17/49] proses 21_0.npz ...
+W0000 00:00:1791882144.394242  733379 face_landmarker_graph.cc:180] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+W0000 00:00:1791882144.400151  733381 inference_feedback_manager.cc:121] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1791882144.414475  733381 inference_feedback_manager.cc:121] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+    selesai 170 dtk | FPS asli 30.0 | frame hilang 0.0%
+[18/49] proses 21_10.npz ...
+W0000 00:00:1791882314.608362  734978 face_landmarker_graph.cc:180] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+W0000 00:00:1791882314.613673  734980 inference_feedback_manager.cc:121] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1791882314.627150  734980 inference_feedback_manager.cc:121] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+    selesai 173 dtk | FPS asli 30.0 | frame hilang 0.0%
+[19/49] proses 22_0.npz ...
+W0000 00:00:1791882487.238973  736493 face_landmarker_graph.cc:180] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+W0000 00:00:1791882487.243968  736495 inference_feedback_manager.cc:121] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1791882487.258661  736495 inference_feedback_manager.cc:121] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+    selesai 237 dtk | FPS asli 30.0 | frame hilang 0.0%
+[20/49] proses 22_10.npz ...
+W0000 00:00:1791882723.975755  738638 face_landmarker_graph.cc:180] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+W0000 00:00:1791882723.980705  738640 inference_feedback_manager.cc:121] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1791882723.992370  738642 inference_feedback_manager.cc:121] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+    selesai 244 dtk | FPS asli 30.0 | frame hilang 0.0%
+[21/49] proses 23_0.npz ...
+W0000 00:00:1791882967.885115  740788 face_landmarker_graph.cc:180] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+W0000 00:00:1791882967.890325  740790 inference_feedback_manager.cc:121] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1791882967.905164  740792 inference_feedback_manager.cc:121] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+    selesai 146 dtk | FPS asli 30.0 | frame hilang 5.0%
+[22/49] proses 23_10.npz ...
+W0000 00:00:1791883114.302376  742105 face_landmarker_graph.cc:180] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+W0000 00:00:1791883114.307505  742108 inference_feedback_manager.cc:121] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1791883114.321114  742108 inference_feedback_manager.cc:121] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+    selesai 160 dtk | FPS asli 30.0 | frame hilang 0.9%
+[23/49] proses 24_0.npz ...
+W0000 00:00:1791883274.341632  743584 face_landmarker_graph.cc:180] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+W0000 00:00:1791883274.352780  743586 inference_feedback_manager.cc:121] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1791883274.380855  743586 inference_feedback_manager.cc:121] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+    selesai 210 dtk | FPS asli 14.9 | frame hilang 0.0%
+[24/49] proses 24_10.npz ...
+W0000 00:00:1791883484.000812  745512 face_landmarker_graph.cc:180] Sets FaceBlendshapesGraph acceleration to xnnpack by default.
+W0000 00:00:1791883484.005917  745514 inference_feedback_manager.cc:121] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+W0000 00:00:1791883484.021557  745515 inference_feedback_manager.cc:121] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+    selesai 219 dtk | FPS asli 14.9 | frame hilang 0.0%
+[25/49] lewati (sudah ada): 25_0.npz
+[26/49] lewati (sudah ada): 25_10.npz
+[27/49] lewati (sudah ada): 26_0.npz
+[28/49] lewati (sudah ada): 26_10.npz
+[29/49] lewati (sudah ada): 27_0.npz
+[30/49] lewati (sudah ada): 27_10.npz
+[31/49] lewati (sudah ada): 28_0.npz
+[32/49] lewati (sudah ada): 28_10.npz
+[33/49] lewati (sudah ada): 29_0.npz
+[34/49] lewati (sudah ada): 29_10.npz
+[35/49] lewati (sudah ada): 30_0.npz
+[36/49] lewati (sudah ada): 30_10.npz
+[37/49] lewati (sudah ada): 31_0.npz
+[38/49] lewati (sudah ada): 31_10.npz
+[39/49] lewati (sudah ada): 32_0.npz
+[40/49] lewati (sudah ada): 32_10_1.npz
+[41/49] lewati (sudah ada): 32_10_2.npz
+[42/49] lewati (sudah ada): 33_0.npz
+[43/49] lewati (sudah ada): 33_10.npz
+[44/49] lewati (sudah ada): 34_0.npz
+[45/49] lewati (sudah ada): 34_10.npz
+[46/49] lewati (sudah ada): 35_0.npz
+[47/49] lewati (sudah ada): 35_10.npz
+[48/49] lewati (sudah ada): 36_0.npz
+[49/49] lewati (sudah ada): 36_10.npz
+
+Total waktu: 91.1 menit
+File landmark tersedia: 49  -> /home/bayu/Kuliah/ERGO-SENSE/landmarks/summary.csv

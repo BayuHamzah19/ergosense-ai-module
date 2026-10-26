@@ -1,0 +1,105 @@
+Perangkat: cpu | data (6033, 4, 75, 20) | subjek ['31', '33', '34', '35', '36']
+Parameter: 92,930 (~0.37 MB float32)
+
+Fold uji=31 | latih=['34', '35', '36'] | validasi=33
+    epoch  1 loss 0.3702 | val F1 0.698 AUC 0.740 | 144.4 dtk
+    epoch  2 loss 0.1679 | val F1 0.512 AUC 0.570 | 159.8 dtk
+    epoch  3 loss 0.1034 | val F1 0.662 AUC 0.696 | 171.8 dtk
+    epoch  4 loss 0.0699 | val F1 0.604 AUC 0.666 | 238.0 dtk
+    epoch  5 loss 0.0635 | val F1 0.395 AUC 0.442 | 258.1 dtk
+    epoch  6 loss 0.0524 | val F1 0.593 AUC 0.650 | 222.2 dtk
+    epoch  7 loss 0.0547 | val F1 0.589 AUC 0.610 | 216.2 dtk
+    epoch  8 loss 0.0333 | val F1 0.721 AUC 0.794 | 210.3 dtk
+    epoch  9 loss 0.0525 | val F1 0.675 AUC 0.695 | 189.0 dtk
+    epoch 10 loss 0.0289 | val F1 0.612 AUC 0.605 | 175.4 dtk
+    epoch 11 loss 0.0246 | val F1 0.528 AUC 0.519 | 169.6 dtk
+    epoch 12 loss 0.0146 | val F1 0.653 AUC 0.678 | 182.7 dtk
+    epoch 13 loss 0.0178 | val F1 0.615 AUC 0.617 | 217.9 dtk
+    epoch 14 loss 0.0081 | val F1 0.619 AUC 0.639 | 221.0 dtk
+    epoch 15 loss 0.0173 | val F1 0.584 AUC 0.625 | 224.4 dtk
+    epoch 16 loss 0.0130 | val F1 0.656 AUC 0.714 | 206.0 dtk
+    early stopping
+  -> {'test_subject': '31', 'val_subject': '33', 'AUC': 0.349, 'bal_acc': 0.394, 'recall_drowsy': np.float64(0.779), 'precision_drowsy': 0.427, 'F1_drowsy': 0.551}
+
+Fold uji=33 | latih=['31', '35', '36'] | validasi=34
+    epoch  1 loss 0.4192 | val F1 0.616 AUC 0.653 | 183.1 dtk
+    epoch  2 loss 0.2257 | val F1 0.451 AUC 0.417 | 235.9 dtk
+    epoch  3 loss 0.1380 | val F1 0.278 AUC 0.279 | 241.6 dtk
+    epoch  4 loss 0.0936 | val F1 0.528 AUC 0.387 | 240.1 dtk
+    epoch  5 loss 0.0711 | val F1 0.274 AUC 0.513 | 211.8 dtk
+    epoch  6 loss 0.1168 | val F1 0.495 AUC 0.424 | 257.1 dtk
+    epoch  7 loss 0.0943 | val F1 0.389 AUC 0.407 | 206.0 dtk
+    epoch  8 loss 0.0723 | val F1 0.409 AUC 0.453 | 214.0 dtk
+    epoch  9 loss 0.0377 | val F1 0.480 AUC 0.397 | 209.3 dtk
+    early stopping
+  -> {'test_subject': '33', 'val_subject': '34', 'AUC': 0.481, 'bal_acc': 0.49, 'recall_drowsy': np.float64(0.981), 'precision_drowsy': 0.482, 'F1_drowsy': 0.647}
+
+Fold uji=34 | latih=['31', '33', '36'] | validasi=35
+    epoch  1 loss 0.3712 | val F1 0.614 AUC 0.321 | 198.6 dtk
+    epoch  2 loss 0.2068 | val F1 0.597 AUC 0.159 | 202.7 dtk
+    epoch  3 loss 0.1302 | val F1 0.521 AUC 0.218 | 202.6 dtk
+    epoch  4 loss 0.1014 | val F1 0.508 AUC 0.182 | 202.2 dtk
+    epoch  5 loss 0.0851 | val F1 0.494 AUC 0.138 | 203.2 dtk
+    epoch  6 loss 0.0633 | val F1 0.454 AUC 0.158 | 199.1 dtk
+    epoch  7 loss 0.0668 | val F1 0.535 AUC 0.188 | 201.8 dtk
+    epoch  8 loss 0.0431 | val F1 0.471 AUC 0.107 | 198.3 dtk
+    epoch  9 loss 0.0313 | val F1 0.496 AUC 0.204 | 197.1 dtk
+    early stopping
+  -> {'test_subject': '34', 'val_subject': '35', 'AUC': 0.27, 'bal_acc': 0.465, 'recall_drowsy': np.float64(0.682), 'precision_drowsy': 0.42, 'F1_drowsy': 0.52}
+
+Fold uji=35 | latih=['31', '33', '34'] | validasi=36
+    epoch  1 loss 0.3346 | val F1 0.036 AUC 0.783 | 204.2 dtk
+    epoch  2 loss 0.1804 | val F1 0.348 AUC 0.361 | 199.5 dtk
+    epoch  3 loss 0.1088 | val F1 0.187 AUC 0.235 | 193.1 dtk
+    epoch  4 loss 0.0709 | val F1 0.327 AUC 0.198 | 192.1 dtk
+    epoch  5 loss 0.0598 | val F1 0.285 AUC 0.253 | 213.8 dtk
+    epoch  6 loss 0.0531 | val F1 0.053 AUC 0.146 | 197.6 dtk
+    epoch  7 loss 0.0470 | val F1 0.108 AUC 0.271 | 196.7 dtk
+    epoch  8 loss 0.0360 | val F1 0.218 AUC 0.275 | 192.6 dtk
+    epoch  9 loss 0.0312 | val F1 0.065 AUC 0.253 | 210.9 dtk
+    early stopping
+  -> {'test_subject': '35', 'val_subject': '36', 'AUC': 0.48, 'bal_acc': 0.544, 'recall_drowsy': np.float64(0.186), 'precision_drowsy': 0.669, 'F1_drowsy': 0.291}
+
+Fold uji=36 | latih=['33', '34', '35'] | validasi=31
+    epoch  1 loss 0.2987 | val F1 0.432 AUC 0.646 | 206.4 dtk
+    epoch  2 loss 0.1720 | val F1 0.450 AUC 0.453 | 209.2 dtk
+    epoch  3 loss 0.1075 | val F1 0.587 AUC 0.513 | 205.0 dtk
+    epoch  4 loss 0.1116 | val F1 0.500 AUC 0.465 | 215.0 dtk
+    epoch  5 loss 0.0987 | val F1 0.589 AUC 0.590 | 203.8 dtk
+    epoch  6 loss 0.0592 | val F1 0.580 AUC 0.639 | 211.5 dtk
+    epoch  7 loss 0.0540 | val F1 0.574 AUC 0.648 | 207.6 dtk
+    epoch  8 loss 0.0637 | val F1 0.611 AUC 0.659 | 201.1 dtk
+    epoch  9 loss 0.0717 | val F1 0.553 AUC 0.578 | 200.5 dtk
+    epoch 10 loss 0.0671 | val F1 0.571 AUC 0.605 | 205.7 dtk
+    epoch 11 loss 0.0444 | val F1 0.599 AUC 0.626 | 217.4 dtk
+    epoch 12 loss 0.0318 | val F1 0.602 AUC 0.564 | 242.7 dtk
+    epoch 13 loss 0.0243 | val F1 0.607 AUC 0.596 | 259.4 dtk
+    epoch 14 loss 0.0239 | val F1 0.596 AUC 0.486 | 264.4 dtk
+    epoch 15 loss 0.0310 | val F1 0.576 AUC 0.563 | 380.1 dtk
+    epoch 16 loss 0.0409 | val F1 0.619 AUC 0.569 | 353.0 dtk
+    early stopping
+  -> {'test_subject': '36', 'val_subject': '31', 'AUC': 0.287, 'bal_acc': 0.352, 'recall_drowsy': np.float64(0.209), 'precision_drowsy': 0.295, 'F1_drowsy': 0.245}
+
+Hasil ST-GCN LOSO:
+test_subject val_subject   AUC  bal_acc  recall_drowsy  precision_drowsy  F1_drowsy
+          31          33 0.349    0.394          0.779             0.427      0.551
+          33          34 0.481    0.490          0.981             0.482      0.647
+          34          35 0.270    0.465          0.682             0.420      0.520
+          35          36 0.480    0.544          0.186             0.669      0.291
+          36          31 0.287    0.352          0.209             0.295      0.245
+
+Rata-rata (bobot sama per subjek):
+ AUC                 0.373
+bal_acc             0.449
+recall_drowsy       0.567
+precision_drowsy    0.459
+F1_drowsy           0.451
+
+Rata-rata tanpa subjek 31:
+ AUC                 0.379
+bal_acc             0.463
+recall_drowsy       0.514
+precision_drowsy    0.466
+F1_drowsy           0.426
+
+Disimpan: /home/bayu/Kuliah/ERGO-SENSE/results/stgcn_loso_self30.csv

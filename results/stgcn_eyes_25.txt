@@ -1,0 +1,28 @@
+Perangkat: cpu | data (4411, 4, 75, 12) | node: eyes | subjek ['25', '26', '27', '28', '29', '30', '31', '33', '34', '35', '36']
+Parameter: 92,866 (~0.37 MB float32)
+
+Fold uji=25 | latih=['27', '28', '29', '30', '31', '33', '34', '35', '36'] | validasi=26
+    epoch  1 loss 0.5390 | val F1 0.397 AUC 0.833 | 22.4 dtk
+    epoch  2 loss 0.3249 | val F1 0.000 AUC 0.076 | 23.2 dtk
+    epoch  3 loss 0.2618 | val F1 0.000 AUC 0.059 | 22.9 dtk
+    epoch  4 loss 0.2121 | val F1 0.095 AUC 0.173 | 20.2 dtk
+    epoch  5 loss 0.1902 | val F1 0.042 AUC 0.099 | 20.0 dtk
+    epoch  6 loss 0.1773 | val F1 0.041 AUC 0.102 | 20.6 dtk
+    epoch  7 loss 0.1455 | val F1 0.037 AUC 0.059 | 20.7 dtk
+    epoch  8 loss 0.1399 | val F1 0.141 AUC 0.197 | 23.8 dtk
+    epoch  9 loss 0.1311 | val F1 0.000 AUC 0.008 | 29.1 dtk
+    early stopping
+  -> {'test_subject': '25', 'val_subject': '26', 'AUC': 0.823, 'bal_acc': 0.743, 'recall_drowsy': np.float64(0.767), 'precision_drowsy': 0.732, 'F1_drowsy': 0.749}
+
+Hasil ST-GCN LOSO:
+test_subject val_subject   AUC  bal_acc  recall_drowsy  precision_drowsy  F1_drowsy
+          25          26 0.823    0.743          0.767             0.732      0.749
+
+Rata-rata (bobot sama per subjek):
+ AUC                 0.823
+bal_acc             0.743
+recall_drowsy       0.767
+precision_drowsy    0.732
+F1_drowsy           0.749
+
+Disimpan: /home/bayu/Kuliah/ERGO-SENSE/results/stgcn_loso_eyes_25.csv
