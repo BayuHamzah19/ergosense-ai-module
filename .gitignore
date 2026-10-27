@@ -22,3 +22,6 @@ results/windows.csv
 results/colab/
 results/slides/
 results/stgcn_preds_*.csv
+*.pt
+*.pth
+*.onnx
