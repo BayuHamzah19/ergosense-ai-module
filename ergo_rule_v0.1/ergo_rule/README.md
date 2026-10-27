@@ -10,7 +10,7 @@ Isi paket:
 | `test_ergo_rule.py` | Uji perilaku dan uji kecocokan Python vs JavaScript (data sintetis) |
 | `eval_rule.py` | Menjalankan mesin pada landmark dataset nyata (khusus sisi AI) |
 
-## Pemakaian di browser (untuk Ardhi)
+## Pemakaian di browser
 
 ```js
 const cfg = await (await fetch('ergo_rule_config.json')).json();
