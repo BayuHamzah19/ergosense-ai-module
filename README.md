@@ -16,5 +16,5 @@ Skrip perbandingan dan uji gabungan ada di branch `eksperimen-gabungan`.
 
 ## Paket yang diserahkan
 
-Gunakan folder `ergo_rule_v0.1/ergo_rule/` (panduan integrasi ada di README di dalamnya). Versi yang dipakai: tag `v0.1.1-ear-rule`.
+Gunakan folder `ergo_rule_v0.1/ergo_rule/` (panduan integrasi ada di README di dalamnya).    Versi yang dipakai: tag terbaru di halaman Tags repositori.
 Parameter yang bertanda `provisional` di `ergo_rule_config.json` (batas merah, pembagi skor, aturan peringatan) belum tervalidasi.
